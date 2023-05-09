@@ -15,10 +15,10 @@ CREATE TABLE reactions(
 );
 
 INSERT INTO contents (name, author_id) VALUES
-('funny dogs', 2);
+('funny dogs', 1);
 
 INSERT INTO reactions VALUES (
-    1,2,false
+    3, 1, false
 );
 
 CREATE TABLE users (
@@ -32,3 +32,5 @@ CREATE TABLE users (
     foot_size smallint,
     height numeric(3, 2) CONSTRAINT too_high_user CHECK (height < 3.0)
 );
+
+INSERT INTO users VALUES (1, 'Spiderman', 'Parker', 'spi@mail', 'male', false, '2022-11-22', NULL, 2.10);
